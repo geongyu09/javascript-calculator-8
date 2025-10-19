@@ -256,13 +256,13 @@ Then "[ERROR] 잘못된 입력입니다."가 출력되고 애플리케이션이 
 
 ## 최종 체크리스트 🤔
 
-- [ ] 모든 기능 요구사항이 구현되었는가?
-- [ ] 모든 시나리오에 대한 테스트가 작성되었는가?
-- [ ] 코드가 JavaScript Style Guide를 준수하는가?
-- [ ] 커밋 메시지가 AngularJS Git Commit Message Conventions을 따르는가
-- [ ] Console API를 사용하여 입력 및 출력을 처리하는가?
-- [ ] package.json 파일을 변경하지 않았는가?
-- [ ] 프로그램 실행의 시작점이 App.js의 run()인가?
-- [ ] 불필요한 외부 라이브러리를 사용하지 않았는가?
-- [ ] 프로그램 종료 시 process.exit()를 호출하지 않는가?
-- [ ] 파일, 패키지 등의 이름을 바꾸거나 이동하지 않았는가?
+- [x] 모든 기능 요구사항이 구현되었는가?
+- [x] 모든 시나리오에 대한 테스트가 작성되었는가?
+- [x] 코드가 JavaScript Style Guide를 준수하는가?
+- [x] 커밋 메시지가 AngularJS Git Commit Message Conventions을 따르는가
+- [x] Console API를 사용하여 입력 및 출력을 처리하는가?
+- [x] package.json 파일을 변경하지 않았는가?
+- [x] 프로그램 실행의 시작점이 App.js의 run()인가?
+- [x] 불필요한 외부 라이브러리를 사용하지 않았는가?
+- [x] 프로그램 종료 시 process.exit()를 호출하지 않는가?
+- [x] 파일, 패키지 등의 이름을 바꾸거나 이동하지 않았는가?
