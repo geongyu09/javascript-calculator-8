@@ -43,7 +43,7 @@ export class Calculator {
         }
 
         try {
-          buffer.appendNumber(+char);
+          buffer.appendNumber(parseInt(char, 10));
         } catch (e) {
           throw new Error(`[ERROR] 올바르지 않는 문자가 들어있습니다. ${char}`);
         }
