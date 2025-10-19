@@ -33,11 +33,11 @@ class Calculator {
       !Number.isNaN(parseInt(inputString[0]))
     ) {
       const buffer = new NumberBuffer();
-      const arr = []; // TODO: 이름 변경하기
+      const separatedNumbers = [];
 
       inputString.split("").forEach((char, index) => {
         if (char === ":" || char === ",") {
-          arr.push(buffer.toNumber());
+          separatedNumbers.push(buffer.toNumber());
           buffer.clear();
           return;
         }
@@ -49,12 +49,14 @@ class Calculator {
         }
 
         if (index === inputString.length - 1) {
-          arr.push(buffer.toNumber());
+          separatedNumbers.push(buffer.toNumber());
           buffer.clear();
         }
       });
 
-      const result = arr.reduce((sum, cur) => parseInt(sum) + parseInt(cur));
+      const result = separatedNumbers.reduce(
+        (sum, cur) => parseInt(sum) + parseInt(cur),
+      );
       return result;
     }
 
