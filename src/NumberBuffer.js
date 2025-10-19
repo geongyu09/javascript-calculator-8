@@ -1,6 +1,5 @@
-export class NumberBuffer {
+class NumberBuffer {
   #digits = [];
-  constructor() {}
 
   isEmpty() {
     return this.#digits.length === 0;
@@ -14,10 +13,12 @@ export class NumberBuffer {
 
   toNumber() {
     if (this.isEmpty()) return 0;
-    return parseInt(this.#digits.map(String).join(""));
+    return parseInt(this.#digits.map(String).join(""), 10);
   }
 
   clear() {
     this.#digits = [];
   }
 }
+
+export default NumberBuffer;

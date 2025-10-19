@@ -1,6 +1,6 @@
-import { NumberBuffer } from "./NumberBuffer";
+import NumberBuffer from "./NumberBuffer";
 
-export class Calculator {
+class Calculator {
   constructor() {}
 
   calculate(inputString) {
@@ -19,7 +19,7 @@ export class Calculator {
       const separator = inputString.slice(2, index);
       const input = inputString.slice(index + 2);
 
-      if (input?.length === 0) return 0;
+      if (!input || input.length === 0) return 0;
       const result = input.split(separator).reduce((sum, cur) => +sum + +cur);
       if (Number.isNaN(result))
         throw new Error("[ERROR] 부적절한 문자가 들어갔습니다.");
@@ -61,3 +61,5 @@ export class Calculator {
     throw new Error("[ERROR]");
   }
 }
+
+export default Calculator;

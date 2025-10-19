@@ -1,4 +1,4 @@
-import { Calculator } from "../src/Calculator";
+import Calculator from "../src/Calculator";
 
 describe("Calculator 단위 테스트", () => {
   let calculator;

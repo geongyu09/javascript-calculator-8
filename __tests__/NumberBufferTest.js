@@ -1,4 +1,4 @@
-import { NumberBuffer } from "../src/NumberBuffer";
+import NumberBuffer from "../src/NumberBuffer";
 
 describe("NumberBuffer 단위테스트", () => {
   let numberBuffer;
